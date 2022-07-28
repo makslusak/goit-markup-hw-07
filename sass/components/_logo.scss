@@ -6,6 +6,10 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--acent-color);
+    &:hover *,
+        &:focus * {
+            color: var(--acent-color);
+        }
     
 }
 
@@ -18,10 +22,7 @@
     transition: var(--color-transition);
 }
 
-.logo__link:hover *,
-.logo__link:focus * {
-    color: var(--acent-color);
-}
+
 
 .logo--white-studio {
     color: var(--white-color);

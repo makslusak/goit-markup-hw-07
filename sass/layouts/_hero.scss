@@ -46,16 +46,17 @@
        var(--background-color-transition) ;
     display: block;
     margin: 0 auto;
-}
-
-.hero__button:hover,
-.hero__button:focus {
-    background-color: rgba(255, 255, 255, 0.9);
+    &:hover,
+        &:focus {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: var(--acent-color);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+&:active {
     color: var(--acent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.hero__button:active {
-    color: var(--white-color);
     border-color: var(--white-color);
 }
+}
+
+
+

@@ -15,16 +15,17 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     transition: var(--color-transition);
+    &:hover,
+        &:focus {
+            color: var(--acent-color);
+        }
 }
 
 .footer__contact-adress {
     color: var(--white-color);
 }
 
-.footer__contact:hover,
-.footer__contact:focus {
-    color: var(--acent-color);
-}
+
 
 .footer__container {
     display: flex;
@@ -70,16 +71,17 @@
     color: var(--text-color);
     padding: 12px;
     transition: var(--background-color-transition);
+    &:hover,
+        &:focus {
+            background-color: var(--acent-color);
+        }
 }
 
 .footer__socials-item:not(:last-child) {
     margin-right: 10px;
 }
 
-.footer__socials-link:hover,
-.footer__socials-link:focus {
-    background-color: var(--acent-color);
-}
+
 
 .footer__form {
     display: flex;
@@ -114,15 +116,15 @@
     border: 2px solid var(--acent-color);
     transition: var(--color-transition), var(--fill-transition),
         var(--background-color-transition);
+        &:hover,
+            &:focus {
+                color: var(--acent-color);
+                fill: var(--acent-color);
+                background-color: rgba(255, 255, 255, 0.9);
+            }
 }
 
 .footer__btn-img {
     margin-left: 10px;
 }
 
-.footer__btn:hover,
-.footer__btn:focus {
-    color: var(--acent-color);
-    fill: var(--acent-color);
-    background-color: rgba(255, 255, 255, 0.9);
-}

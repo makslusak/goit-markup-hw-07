@@ -4,11 +4,12 @@
 
 .highlights__item {
     width: 270px;
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
-.highlights__item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .highlights__thumb {
     background-color: var(--grey-color);

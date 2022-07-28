@@ -13,19 +13,20 @@
     align-items: center;
     justify-content: center;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            border-color: var(--acent-color);
+        }
 }
 
 .clients__logo {
     fill: var(--logo-gray);
     transition: var(--fill-transition);
+    .clients__link:hover &,
+        .clients__link:focus & {
+            fill: var(--acent-color);
+        }
 }
 
-.clients__link:hover,
-.clients__link:focus {
-    border-color: var(--acent-color);
-}
 
-.clients__link:hover .clients__logo,
-.clients__link:focus .clients__logo {
-    fill: var(--acent-color);
-}
+

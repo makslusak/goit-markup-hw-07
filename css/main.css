@@ -101,6 +101,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--acent-color);
 }
+.logo__link:hover *, .logo__link:focus * {
+  color: var(--acent-color);
+}
 
 .logo--header {
   margin-right: 93px;
@@ -109,11 +112,6 @@ body {
 .logo--black-studio {
   color: var(--black-color);
   transition: var(--color-transition);
-}
-
-.logo__link:hover *,
-.logo__link:focus * {
-  color: var(--acent-color);
 }
 
 .logo--white-studio {
@@ -153,25 +151,21 @@ body {
   color: var(--titles-color);
   transition: var(--color-transition);
 }
+.nav__link:hover, .nav__link:focus {
+  color: var(--acent-color);
+}
 
 .nav__item {
   position: relative;
 }
-
 .nav__item:not(:last-child) {
   margin-right: 50px;
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  color: var(--acent-color);
 }
 
 .curent-link {
   color: var(--acent-color);
   transition: var(--color-transition);
 }
-
 .curent-link::after {
   content: "";
   position: absolute;
@@ -182,9 +176,7 @@ body {
   border-radius: 2px;
   background-color: var(--acent-color);
 }
-
-.curent-link:hover,
-.curent-link:focus {
+.curent-link:hover, .curent-link:focus {
   color: var(--titles-color);
 }
 
@@ -206,16 +198,14 @@ body {
   align-items: center;
   transition: var(--color-transition);
 }
+.header__link:hover, .header__link:focus {
+  color: var(--acent-color);
+}
 
 .header__icon {
   display: inline-block;
   margin-right: 10px;
   fill: currentColor;
-}
-
-.header__link:hover,
-.header__link:focus {
-  color: var(--acent-color);
 }
 
 .titles {
@@ -275,16 +265,13 @@ body {
   display: block;
   margin: 0 auto;
 }
-
-.hero__button:hover,
-.hero__button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: rgba(255, 255, 255, 0.9);
   color: var(--acent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
 .hero__button:active {
-  color: var(--white-color);
+  color: var(--acent-color);
   border-color: var(--white-color);
 }
 
@@ -295,7 +282,6 @@ body {
 .highlights__item {
   width: 270px;
 }
-
 .highlights__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -417,6 +403,9 @@ body {
   padding: 12px;
   transition: var(--background-color-transition);
 }
+.team__socials-link:hover, .team__socials-link:focus {
+  background-color: var(--acent-color);
+}
 
 .team__socials-item:not(:last-child) {
   margin-right: 10px;
@@ -424,16 +413,9 @@ body {
 
 .team__socials-icon {
   fill: var(--logo-gray);
-  transition: --fill-color-transition;
+  transition: var(--fill-transition);
 }
-
-.team__socials-link:hover,
-.team__socials-link:focus {
-  background-color: var(--acent-color);
-}
-
-.team__socials-link:hover .team__socials-icon,
-.team__socials-link:focus .team__socials-icon {
+.team__socials-link:hover .team__socials-icon, .team__socials-link:focus .team__socials-icon {
   fill: var(--white-color);
 }
 
@@ -453,19 +435,15 @@ body {
   justify-content: center;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.clients__link:hover, .clients__link:focus {
+  border-color: var(--acent-color);
+}
 
 .clients__logo {
   fill: var(--logo-gray);
   transition: var(--fill-transition);
 }
-
-.clients__link:hover,
-.clients__link:focus {
-  border-color: var(--acent-color);
-}
-
-.clients__link:hover .clients__logo,
-.clients__link:focus .clients__logo {
+.clients__link:hover .clients__logo, .clients__link:focus .clients__logo {
   fill: var(--acent-color);
 }
 
@@ -487,14 +465,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
   transition: var(--color-transition);
 }
+.footer__contact:hover, .footer__contact:focus {
+  color: var(--acent-color);
+}
 
 .footer__contact-adress {
   color: var(--white-color);
-}
-
-.footer__contact:hover,
-.footer__contact:focus {
-  color: var(--acent-color);
 }
 
 .footer__container {
@@ -542,14 +518,12 @@ body {
   padding: 12px;
   transition: var(--background-color-transition);
 }
+.footer__socials-link:hover, .footer__socials-link:focus {
+  background-color: var(--acent-color);
+}
 
 .footer__socials-item:not(:last-child) {
   margin-right: 10px;
-}
-
-.footer__socials-link:hover,
-.footer__socials-link:focus {
-  background-color: var(--acent-color);
 }
 
 .footer__form {
@@ -585,16 +559,14 @@ body {
   border: 2px solid var(--acent-color);
   transition: var(--color-transition), var(--fill-transition), var(--background-color-transition);
 }
-
-.footer__btn-img {
-  margin-left: 10px;
-}
-
-.footer__btn:hover,
-.footer__btn:focus {
+.footer__btn:hover, .footer__btn:focus {
   color: var(--acent-color);
   fill: var(--acent-color);
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer__btn-img {
+  margin-left: 10px;
 }
 
 .backdrop {
@@ -640,15 +612,18 @@ body {
   height: 30px;
   justify-content: center;
   align-items: center;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.closebtn:focus {
+  border: 1px solid var(--acent-color);
 }
 
 .closebtn-icon {
   fill: var(--black-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--fill-transition);
 }
-
-.closebtn:hover .closebtn-icon,
-.closebtn:focus .closebtn-icon {
+.closebtn:hover .closebtn-icon, .closebtn:focus .closebtn-icon {
   fill: var(--acent-color);
 }
 
@@ -693,7 +668,11 @@ body {
   width: 448px;
   height: 40px;
   padding: 12px 16px 12px 42px;
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__input:focus {
+  border: 1px solid var(--acent-color);
 }
 
 .modal__icon {
@@ -705,10 +684,6 @@ body {
   fill: var(--acent-color);
 }
 
-.modal__input:focus {
-  outline: 1px solid var(--acent-color);
-}
-
 .modal__text {
   width: 448px;
   height: 120px;
@@ -717,11 +692,11 @@ body {
   padding: 12px 16px;
   margin-bottom: 20px;
   resize: none;
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal__text:focus {
-  outline: 1px solid var(--acent-color);
+  border: 1px solid var(--acent-color);
 }
 
 .modal__item {
@@ -816,8 +791,6 @@ body {
   color: var(--white-color);
   transition: var(--background-color-transition);
 }
-
-.modal__btn:hover,
-.modal__btn:focus {
+.modal__btn:hover, .modal__btn:focus {
   background-color: #188ce8;
 }/*# sourceMappingURL=main.css.map */
