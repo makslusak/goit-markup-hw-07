@@ -1,0 +1,34 @@
+.logo__link {
+    display: inline-block;
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--acent-color);
+    
+}
+
+.logo--header {
+    margin-right: 93px;
+}
+
+.logo--black-studio {
+    color: var(--black-color);
+    transition: var(--color-transition);
+}
+
+.logo__link:hover *,
+.logo__link:focus * {
+    color: var(--acent-color);
+}
+
+.logo--white-studio {
+    color: var(--white-color);
+    transition: var(--color-transition);
+}
+
+.logo--footer {
+    margin: 0px 0px 20px 0px;
+}
+
