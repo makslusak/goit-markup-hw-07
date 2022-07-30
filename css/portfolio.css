@@ -111,12 +111,16 @@ body {
 
 .logo--black-studio {
   color: var(--black-color);
-  transition: var(--color-transition);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo--white-studio {
   color: var(--white-color);
-  transition: var(--color-transition);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo--footer {
@@ -149,7 +153,9 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--titles-color);
-  transition: var(--color-transition);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav__link:hover, .nav__link:focus {
   color: var(--acent-color);
@@ -164,7 +170,9 @@ body {
 
 .curent-link {
   color: var(--acent-color);
-  transition: var(--color-transition);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .curent-link::after {
   content: "";
@@ -196,7 +204,9 @@ body {
   color: var(--text-color);
   display: flex;
   align-items: center;
-  transition: var(--color-transition);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link:hover, .header__link:focus {
   color: var(--acent-color);
@@ -224,7 +234,9 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition: var(--color-transition);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__contact:hover, .footer__contact:focus {
   color: var(--acent-color);
@@ -277,7 +289,9 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--text-color);
   padding: 12px;
-  transition: var(--background-color-transition);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__socials-link:hover, .footer__socials-link:focus {
   background-color: var(--acent-color);
@@ -301,6 +315,13 @@ body {
   width: 358px;
   color: var(--white-color);
   padding: 15px 16px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__form-field > input:focus {
+  border: 1px solid #fff;
+  outline: none;
 }
 
 .footer__btn {
@@ -318,7 +339,9 @@ body {
   border-radius: 4px;
   padding: 8px 28px;
   border: 2px solid var(--acent-color);
-  transition: var(--color-transition), var(--fill-transition), var(--background-color-transition);
+  transition-property: color, fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__btn:hover, .footer__btn:focus {
   color: var(--acent-color);
@@ -353,9 +376,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--titles-color);
   padding: 6px 22px;
-  transition: all 0.3s ease-out;
   cursor: pointer;
-  transition: var(--background-color-transition), var(--color-transition), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-list__button:hover,
@@ -380,7 +404,9 @@ body {
 }
 
 .works__item {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow, box-null;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .works__item:hover {
@@ -418,7 +444,9 @@ body {
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
-  transition: var(--opacity-transition), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .works__card {

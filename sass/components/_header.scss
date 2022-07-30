@@ -27,7 +27,7 @@
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--titles-color);
-    transition: var(--color-transition);
+    @include transition(color, null, null, null);
     &:hover, &:focus {
     color: var(--acent-color);
         }
@@ -43,7 +43,7 @@
 
 .curent-link {
     color: var(--acent-color);
-    transition: var(--color-transition);
+    @include transition(color, null, null, null);
     &::after {
     content: '';
     position: absolute;
@@ -80,7 +80,7 @@
     color: var(--text-color);
     display: flex;
     align-items: center;
-    transition: var(--color-transition);
+    @include transition(color, null, null, null);
     &:hover,
         &:focus {
             color: var(--acent-color);

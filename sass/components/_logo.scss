@@ -19,14 +19,14 @@
 
 .logo--black-studio {
     color: var(--black-color);
-    transition: var(--color-transition);
+    @include transition(color, null, null, null);
 }
 
 
 
 .logo--white-studio {
     color: var(--white-color);
-    transition: var(--color-transition);
+    @include transition(color, null, null, null);
 }
 
 .logo--footer {
